@@ -1,0 +1,29 @@
+***************************************************************************
+
+// SQL
+
+-- BASIC --
+
+CREATE TABLE NAME (for creating a new table)
+(
+colname datatype (int,varchar,char),
+colname datatype
+)
+
+-- comment
+
+INSERT INTO TABLENAME VALUES (for inserting values into the table)
+(value1,value2)
+
+SELECT - FROM TABLENAME (*,TOP,DISTINCT(),COUNT(),AS,MAX(),MIN(),AVG())
+
+*the tablename is relative to which database we are currently in and
+ if it is the master database, then we should specify the whole path
+ of the table to access the contents
+
+SELECT * FROM TABLENAME
+WHERE colname (=,<>,<,>,<=,>=,AND,OR,LIKE "%a%",is NULL,is NOT NULL,IN)
+GROUP BY colname
+ORDER BY colname (ASC,DESC)
+
+*we can also use the column number instead of column name
